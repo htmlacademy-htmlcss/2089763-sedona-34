@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отели</title>
+</head>
+<body>
+  <header class="page-header">
+    <a class="header-logo"><img src="#" alt="Логотип Sedona" class="header-logo-img"></a>
+    <nav class="navigation">
+      <ul class="navigation-list">
+        <li class="navigation-item"><a href="index.html" class="navigation-link">Главная</a></li>
+        <li class="navigation-item"><a href="#" class="navigation-link">О Седоне</a></li>
+        <li class="navigation-item"><a href="#" class="navigation-link">Гостиницы</a></li>
+      </ul>
+      <ul class="navigation-list navigation-user">
+        <li class="navigation-item"><a href="#" class="navigation-link"><span class="visually-hidden">Поиск</span></a></li>
+        <li class="navigation-item"><a href="#" class="navigation-link"><span class="visually-hidden">Избранное</span></a></li>
+        <li class="navigation-item"><a href="#" class="navigation-link">Хочу сюда</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="filters">
+      <h1 class="filters-title">Гостиницы Седоны</h1>
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs-item"><a href="index.html" class="breadcrumbs-link"><span class="visually-hidden">Главная</span></a></li>
+        <li class="breadcrumbs-item"><a class="breadcrumbs-link">Гостиницы</a></li>
+      </ul>
+      <form action="https://echo.htmlacademy.ru" method="get" id="filters-form" class="filters-form">
+        <fieldset class="filters-infrustructure">
+          <legend class="filters-infrustructure-title">Инфраструктура:</legend>
+          <label for="filters-infrustructure-pool">Бассейн</label>
+          <input type="checkbox" name="filters-infrustructure-pool" id="filters-infrustructure-pool" value="Pool" checked>
+          <label for="filters-infrustructure-parking">Парковка</label>
+          <input type="checkbox" name="filters-infrustructure-parking" id="filters-infrustructure-parking" value="Parking" checked>
+          <label for="filters-infrustructure-wifi">Wi-Fi</label>
+          <input type="checkbox" name="filters-infrustructure-wifi" id="filters-infrustructure-wifi" value="Wi-Fi" >
+        </fieldset>
+        <fieldset class="filters-type">
+          <legend class="filters-type-title">Тип жилья:</legend>
+          <label for="filters-type-hotel">Гостиница</label>
+          <input type="radio" name="filters-type" id="filters-type-hotel" value="Hotel" checked>
+          <label for="filters-type-motel">Мотель</label>
+          <input type="radio" name="filters-type" id="filters-type-motel" value="Motel">
+          <label for="filters-type-apartments">Апартаменты</label>
+          <input type="radio" name="filters-type" id="filters-type-apartments" value="Apartments">
+        </fieldset>
+        <fieldset class="filters-price">
+          <legend class="filters-price-title">Стоимость, ₽:</legend>
+          <label for="filters-price-from" class="visually-hidden">Цена за сутки, от</label>
+          <input type="text" name="filters-price-from" id="filter-price-from" placeholder="от" value="0">
+          <label for="filters-price-to" class="visually-hidden">Цена за сутки, до</label>
+          <input type="text" name="filters-price-to" id="filter-price-to" placeholder="до" value="9000">
+        </fieldset>
+        <button type="submit" class="filters-button-submit">Приметить</button>
+        <button type="reset" class="filters-button-reset">Сбросить</button>
+      </form>
+    </section>
+    <section class="signup catalog-signup">
+      <h2 class="signup-title">Подпишитесь на рассылку</h2>
+      <p class="signup-description">Только информация и никакого спама, честное бойскаутское!</p>
+      <form action="https://echo.htmlacademy.ru" method="get" id="signup-form" class="signup-form">
+        <label for="signup-field" class="visually-hidden">E-mail</label>
+        <input type="email" name="signup-field" placeholder="Ваш e-mail" id="signup-field">
+        <input type="submit" value="Отправить" class="signup-button">
+      </form>
+    </section>    
+  </main>
+  <footer class="page-footer">
+    <ul class="social-list">
+      <li class="social-item"><a href="https://vk.com/htmlacademy" class="social-link"><span class="visually-hidden">Вконтакте</span></a></li>
+      <li class="social-item"><a href="https://t.me/htmlacademy" class="social-link"><span class="visually-hidden">Telegram</span></a></li>
+      <li class="social-item"><a href="https://www.youtube.com/user/htmlacademyru" class="social-link"><span class="visually-hidden">Youtube</span></a></li>
+    </ul>
+    <a href="tel:+78128121212" class="footer-phone">+7 (812) 812-12-12</a>
+    <a href="https://htmlacademy.ru/" class="footer-logo"><img src="#" alt="Логотип HTML Academy" class="footer-logo-img"></a>
+  </footer>    
+</body>
+</html>
