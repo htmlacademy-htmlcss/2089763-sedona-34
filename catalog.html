@@ -32,21 +32,33 @@
       <form action="https://echo.htmlacademy.ru" method="get" id="filters-form" class="filters-form">
         <fieldset class="filters-infrustructure">
           <legend class="filters-infrustructure-title">Инфраструктура:</legend>
-          <label for="filters-infrustructure-pool">Бассейн</label>
-          <input type="checkbox" name="filters-infrustructure-pool" id="filters-infrustructure-pool" value="Pool" checked>
-          <label for="filters-infrustructure-parking">Парковка</label>
-          <input type="checkbox" name="filters-infrustructure-parking" id="filters-infrustructure-parking" value="Parking" checked>
-          <label for="filters-infrustructure-wifi">Wi-Fi</label>
-          <input type="checkbox" name="filters-infrustructure-wifi" id="filters-infrustructure-wifi" value="Wi-Fi" >
+          <p class="filters-wrapper">
+            <label for="filters-infrustructure-pool">Бассейн</label>
+            <input type="checkbox" name="pool" id="filters-infrustructure-pool" value="yes" checked>
+          </p>
+          <p class="filters-wrapper">
+            <label for="filters-infrustructure-parking">Парковка</label>
+            <input type="checkbox" name="parking" id="filters-infrustructure-parking" value="yes" checked>
+          </p>
+          <p class="filters-wrapper">
+            <label for="filters-infrustructure-wifi">Wi-Fi</label>
+            <input type="checkbox" name="wifi" id="filters-infrustructure-wifi" value="yes">
+          </p>
         </fieldset>
-        <fieldset class="filters-type">
-          <legend class="filters-type-title">Тип жилья:</legend>
-          <label for="filters-type-hotel">Гостиница</label>
-          <input type="radio" name="filters-type" id="filters-type-hotel" value="Hotel" checked>
-          <label for="filters-type-motel">Мотель</label>
-          <input type="radio" name="filters-type" id="filters-type-motel" value="Motel">
-          <label for="filters-type-apartments">Апартаменты</label>
-          <input type="radio" name="filters-type" id="filters-type-apartments" value="Apartments">
+        <fieldset class="filters-housing-type">
+          <legend class="filters-housing-type-title">Тип жилья:</legend>
+          <p class="filters-wrapper">
+            <label for="filters-housing-type-hotel">Гостиница</label>
+            <input type="radio" name="housing-type" id="filters-housing-type-hotel" value="hotel" checked>
+          </p>
+          <p class="filters-wrapper">
+            <label for="filters-housing-type-motel">Мотель</label>
+            <input type="radio" name="housing-type" id="filters-housing-type-motel" value="motel">
+          </p>
+          <p class="filters-wrapper">
+            <label for="filters-housing-type-apartments">Апартаменты</label>
+            <input type="radio" name="housing-type" id="filters-housing-type-apartments" value="apartments">
+          </p>
         </fieldset>
         <fieldset class="filters-price">
           <legend class="filters-price-title">Стоимость, ₽:</legend>
@@ -55,8 +67,8 @@
           <label for="filters-price-to" class="visually-hidden">Цена за сутки, до</label>
           <input type="text" name="filters-price-to" id="filter-price-to" placeholder="до" value="9000">
         </fieldset>
-        <button type="submit" class="filters-button-submit">Приметить</button>
-        <button type="reset" class="filters-button-reset">Сбросить</button>
+          <button type="submit" class="filters-button-submit">Приметить</button>
+          <button type="reset" class="filters-button-reset">Сбросить</button>
       </form>
     </section>
     <section class="signup catalog-signup">
