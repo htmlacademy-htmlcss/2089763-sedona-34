@@ -23,8 +23,8 @@ html {
 }
 
 body {
-  min-width: 1200px;
-  margin: 0;
+  width: 1200px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -78,6 +78,8 @@ body {
 
   .logo img {
     display: block;
+    position: absolute;
+    top: 0;
   }
 
   .site-nav {
@@ -180,11 +182,184 @@ body {
     color: rgba(255, 255, 255, 0.3);
   }
 
+  /* Main */
+
+  /* Welcome */
+
+  .welcome {
+    padding-top: 51px;
+    padding-bottom: 82px;
+    background-image: url(/img/welcome-background.jpg);
+    background-repeat: no-repeat;
+    background-size: 1200px 485px;
+    background-position: center;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .welcome img {
+    vertical-align: middle;
+    height: 352px;
+  }
+
+  /* Advantages */
+
+  .advantages {
+    padding-top: 63px;
+  }
+
+  .advantages-title {
+    margin: 0;
+    margin-bottom: 31px;
+    line-height: 36px;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .advantages-description {
+    margin: 0;
+    margin-bottom: 90px;
+    line-height: 26px;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .advantages-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .advantages-item-first,
+  .advantages-item-second {
+    display: flex;
+  }
+
+  .advantages-item-second {
+    flex-direction: row-reverse;
+  }
+
+  .advantages-item-text {
+    width: 400px;
+    box-sizing: border-box;
+  }
+
+  .advantages-text-first,
+  .advantages-text-second {
+    padding: 92px 85px;
+    background-color: #82B3D3;
+    color: #fff;
+  }
+
+  .advantages-text-third,
+  .advantages-text-fourth,
+  .advantages-text-fifth {
+    padding: 102px 85px;
+  }
+
+  .advantages-text-third,
+  .advantages-text-fifth {
+    background-color: rgba(131, 179, 211, 0.12);
+  }
+
+  .advantages-text-fourth {
+    background-color: rgba(131, 179, 211, 0.2);
+  }
+
+  .advantages-item-img {
+    width: 800px;
+    background-color: grey;
+  }
+
+  .advantages-item-img img {
+    display: block;
+  }
+
+  .advantages-item-title {
+    margin: 0;
+    margin-bottom: 30px;
+    line-height: 28px;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+
+  }
+
+  .advantages-item-number {
+    margin: 0;
+    margin-bottom: 30px;
+    line-height: 21px;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .advantages-item-number::before,
+  .advantages-item-number::after {
+    content: "\2014";
+  }
+
+  .advantages-item-description {
+    margin: 0;
+    line-height: 21px;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .advantages-item-living,
+  .advantages-item-food,
+  .advantages-item-souvenir {
+    display: flex;
+    flex-direction: column;
+    padding: 78px 85px;
+  }
+
+  .advantages-item-icon {
+    order: -1;
+  }
+
+  .advantages-icon-living {
+    height: 75px;
+    margin-bottom: 30px;
+    background-image: url(/img/icon-house.svg);
+    background-repeat: no-repeat;
+    background-size: 78px 75px;
+    background-position: center;
+  }
+
+  .advantages-icon-food {
+    height: 75px;
+    margin-bottom: 30px;
+    background-image: url(/img/icon-food.svg);
+    background-repeat: no-repeat;
+    background-size: 80px 75px;
+    background-position: center;
+  }
+
+  .advantages-icon-souvenir {
+    height: 75px;
+    margin-bottom: 30px;
+    background-image: url(/img/icon-souvenir.svg);
+    background-repeat: no-repeat;
+    background-size: 63px 75px;
+    background-position: center;
+  }
+
+  .advantages-item-living,
+  .advantages-item-souvenir {
+    background-color: rgba(131, 179, 211, 0.12)
+  }
+
   /* Footer */
 
 .page-footer-wrapper {
   display: flex;
   align-items: center;
+  height: 120px;
 }
 
 .footer-social {
@@ -193,10 +368,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  width: 200px;
+  margin-top: -15px;
   list-style: none;
-  padding-top: 45px;
-  padding-bottom: 50px;
 }
 
 .footer-social-item + .footer-social-item  {
@@ -224,6 +397,7 @@ body {
 }
 
 .footer-contact-phone {
+  display: block;
   font-size: 40px;
   line-height: 40px;
   font-weight: 400;
@@ -235,17 +409,18 @@ body {
 
 .footer-contact-phone:hover,
 .footer-contact-phone:focus {
-  color: rgb(117, 97, 87)
+  color: rgb(117, 97, 87);
 }
 
 .footer-contact-phone:active {
-  color: rgba(117, 97, 87, 0.3)
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .logo-htmlacademy {
   width: 115px;
   flex-shrink: 0;
   margin-left: auto;
+  margin-top: -10px;
 }
 
 .logo-htmlacademy-img {
