@@ -12,7 +12,7 @@
     <div class="page-container">
       <nav class="page-nav">
         <a href="index.html" class="logo">
-          <img src="img/logo.svg" alt="Логотип Седона" width="139" height="70px">
+          <img src="img/logo.svg" alt="Логотип Седона" width="139" height="70">
           <span class="visually-hidden">На главную</span>
         </a>
         <ul class="site-nav">
@@ -52,7 +52,7 @@
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
               <a href="index.html" class="breadcrumbs-link">
-                <img src="/img/home-button.svg" alt="Домашняя страница" width="13" height="13">
+                <img src="img/home-button.svg" alt="Домашняя страница" width="13" height="13">
               </a>
             </li>
             <li class="breadcrumbs-item">
@@ -113,6 +113,29 @@
               </li>
             </ul>
           </fieldset>
+          <fieldset class="filter-group filter-group-third">
+            <legend class="filter-title">Стоимость, ₽:</legend>
+            <div class="filter-price">
+              <div class="filter-price-from">
+                <label for="filter-price-from">от</label>
+                <input type="text" id="filter-price-from" value="0">
+              </div>
+              <div class="filter-price-to">
+                <label for="filter-price-to">до</label>
+                <input type="text" id="filter-price-to" value="9000">
+              </div>
+            </div>
+            <div class="range-scale">
+              <div class="range-bar" style="left: 0px; width: 230px">
+                <button class="range-toggle toggle-min">
+                  <span class="visually-hidden">Изменить минимальную цену.</span>
+                </button>
+                <button class="range-toggle toggle-max">
+                  <span class="visually-hidden">Изменить максимальную цену.</span>
+                </button>
+              </div>
+            </div>
+          </fieldset>
           <div class="filter-button">
             <button type="submit" class="filter-button-apply">Применить</button>
             <button type="reset" class="filter-button-reset">Сбросить</button>
@@ -148,7 +171,7 @@
           <li class="hotel-item">
             <h3 class="hotel-item-title" id="title_1">Amara Resort & Spa</h3>
             <a href="#" class="hotel-item-link">
-              <img src="/img/amare-resort-spa.jpg" aria-labelledby="title_1" alt="" width="300" height="211">
+              <img src="img/amare-resort-spa.jpg" aria-labelledby="title_1" alt="" width="300" height="211">
             </a>
             <div class="hotel-item-info">
               <p class="hotel-item-info-category">Гостиница</p>
@@ -160,10 +183,10 @@
             </div>
             <div class="hotel-item-rate">
               <div class="hotel-item-rate-stars" role="img" aria-label="Рейтинг 4 из 5">
-                <img src="/img/star.svg" alt="">
-                <img src="/img/star.svg" alt="">
-                <img src="/img/star.svg" alt="">
-                <img src="/img/star.svg" alt="">
+                <img src="img/star.svg" alt="">
+                <img src="img/star.svg" alt="">
+                <img src="img/star.svg" alt="">
+                <img src="img/star.svg" alt="">
               </div>
               <p class="hotel-item-rate-score">Рейтинг: 8,5</p>
             </div>
@@ -171,7 +194,7 @@
           <li class="hotel-item">
             <h3 class="hotel-item-title" id="title_2">Villas at Poco Diablo</h3>
             <a href="#" class="hotel-item-link">
-              <img src="/img/villas-poco-diablo.jpg" aria-labelledby="title_2" alt="" width="300" height="211">
+              <img src="img/villas-poco-diablo.jpg" aria-labelledby="title_2" alt="" width="300" height="211">
             </a>
             <div class="hotel-item-info">
               <p class="hotel-item-info-category">Гостиница</p>
@@ -194,7 +217,7 @@
           <li class="hotel-item">
             <h3 class="hotel-item-title" id="title_3">Desert Quail Inn</h3>
             <a href="#" class="hotel-item-link">
-              <img src="/img/desert-quail-inn.jpg" aria-labelledby="title_3" alt="" width="300" height="211">
+              <img src="img/desert-quail-inn.jpg" aria-labelledby="title_3" alt="" width="300" height="211">
             </a>
             <div class="hotel-item-info">
               <p class="hotel-item-info-category">Гостиница</p>
@@ -216,7 +239,7 @@
           <li class="hotel-item">
             <h3 class="hotel-item-title" id="title_3">GreenTree Inn</h3>
             <a href="#" class="hotel-item-link">
-              <img src="/img/greentree-inn.jpg" aria-labelledby="title_3" alt="" width="300" height="211">
+              <img src="img/greentree-inn.jpg" aria-labelledby="title_3" alt="" width="300" height="211">
             </a>
             <div class="hotel-item-info">
               <p class="hotel-item-info-category">Гостиница</p>
@@ -228,8 +251,8 @@
             </div>
             <div class="hotel-item-rate">
               <div class="hotel-item-rate-stars" role="img" aria-label="Рейтинг 4 из 5">
-                <img src="/img/star.svg" alt="">
-                <img src="/img/star.svg" alt="">
+                <img src="img/star.svg" alt="">
+                <img src="img/star.svg" alt="">
               </div>
               <p class="hotel-item-rate-score">Рейтинг: 5,0</p>
             </div>
@@ -268,7 +291,7 @@
     <section class="signup">
       <div class="page-container">
         <h2 class="signup-title">Подпишитесь на рассылку</h2>
-        <p class="signup-description">Только полезная информация и никакого спама, </br> честное бойскаутское!</p>
+        <p class="signup-description">Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
         <form class="signup-newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="newsletter-email">Email</label>
           <input class="signup-newsletter-field" type="email" name="newsletter-email" id="newsletter-email" placeholder="Ваш e-mail" required>
