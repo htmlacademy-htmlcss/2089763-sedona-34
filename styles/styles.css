@@ -490,6 +490,7 @@ img {
 }
 
 .signup-newsletter-button {
+  font-family: "PT Sans", sans-serif;
   border: 0;
   width: 200px;
   padding: 12px 15px;
