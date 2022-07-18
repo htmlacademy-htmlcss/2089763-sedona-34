@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
@@ -293,5 +294,60 @@
         </a>
       </div>
     </footer>
+    <!-- Popup -->
+    <div class="modal-container">
+      <div class="modal modal-auth">
+        <button class="modal-close-button">
+          <svg class="modal-close-cross" aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 1.2 11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2Z"/></svg>
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group">
+              <label for="date-from" class="date-from">Дата Заезда:</label>
+              <input type="text" class="date-form-field" id="date-from" name="date-from" placeholder="27 апреля 2020" required>
+            </p>
+            <span class="modal-message-warning">Мы не можем отправить вас в прошлое.</span>
+            <p class="field-group">
+              <label for="date-to" class="date-to">Дата Выезда:</label>
+              <input type="text" class="date-form-field" id="date-to" name="date-to" placeholder="1 сентября 2021">
+            </p>
+            <span class="modal-message">На эти даты есть свободные номера. Пока есть.</span>
+            <p class="field-group">
+              <label for="human-counter-adults" class="human-counter-adult">Взрослые:</label>
+              <button class="human-counter-button minus-adults" type="button">
+                <span class="visually-hidden">Уменьшить количество взрослых.</span>
+                <svg class="modal-counter-icon" aria-hidden="true" focusable="false" width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0v1h13V0H0Z"/></svg>
+              </button>
+              <input type="number" class="human-counter-form-field" id="human-counter-adults" name="number-of-adults" placeholder="2" required>
+              <button class="human-counter-button plus-adults">
+                <span class="visually-hidden">Увеличить количество взрослых.</span>
+                <svg class="modal-counter-icon" aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/></svg>
+              </button>
+              <span class="human-counter-children">
+                <label for="human-counter-children" class="human-counter-children">Дети:</label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button">
+                    <svg aria-hidden="true" focusable="false" class="tooltip-icon" width="25" height="25" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg"><circle cx="12.5" cy="12.5" r="12.5" /><g clip-path="url(#a)" fill="#fff"><path d="M12 17h1v-6h-1v6ZM13 8h-1v1h1V8Z" /></g><defs><clipPath id="a"><path fill="#fff" transform="translate(12 8)" d="M0 0h1v9H0z" /></clipPath></defs></svg>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
+              </span>
+              <button class="human-counter-button minus-children" type="button">
+                <span class="visually-hidden">Уменьшить количество детей.</span>
+                <svg aria-hidden="true" focusable="false" class="modal-counter-icon" width="13" height="1" viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg"><path d="M0 0v1h13V0H0Z" /></svg>
+              </button>
+              <input class="human-counter-form-field" required type="number" id="human-counter-children" name="number-of-children" placeholder="1">
+              <button class="human-counter-button plus-children" type="button">
+                <span class="visually-hidden">Увеличить количество детей.</span>
+                <svg aria-hidden="true" focusable="false" class="modal-counter-icon" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" /></svg>
+              </button>
+            </p>
+            <button class="modal-search-button" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
