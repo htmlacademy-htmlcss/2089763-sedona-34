@@ -49,14 +49,6 @@ body {
   overflow: hidden;
 }
 
-/* Images */
-
-img {
-  max-width: 100%;
-  height: auto;
-  /* эти параметры нужны, чтобы картинки не теряли пропорции ни при каких обстоятельствах */
-}
-
 /* Align container */
 
 .page-container {
